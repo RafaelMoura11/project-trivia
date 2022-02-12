@@ -4,7 +4,6 @@ import Login from './pages/Login';
 import Main from './pages/Main';
 import FeedBack from './pages/FeedBack';
 import './App.css';
-import Conf from './pages/Conf';
 import Ranking from './pages/Ranking';
 
 export default function App() {
@@ -12,7 +11,6 @@ export default function App() {
     <Switch>
       <Route exact path="/" component={ Login } />
       <Route exact path="/main" component={ Main } />
-      <Route exact path="/conf" component={ Conf } />
       <Route exact path="/feedback" component={ FeedBack } />
       <Route exact path="/ranking" component={ Ranking } />
     </Switch>

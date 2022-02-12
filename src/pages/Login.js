@@ -16,7 +16,6 @@ class Login extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.disabled = this.disabled.bind(this);
     this.handleClick = this.handleClick.bind(this);
-    this.goToConf = this.goToConf.bind(this);
   }
 
   handleChange({ target }) {
@@ -25,11 +24,6 @@ class Login extends Component {
     this.setState({
       [name]: value,
     }, this.disabled);
-  }
-
-  goToConf() {
-    const { history } = this.props;
-    history.push('/conf');
   }
 
   disabled() {
@@ -98,14 +92,6 @@ class Login extends Component {
                 onClick={ this.handleClick }
               >
                 Jogar
-              </button>
-              <button
-                type="button"
-                name="config"
-                data-testid="btn-settings"
-                onClick={ this.goToConf }
-              >
-                Configurações
               </button>
             </div>
           </form>
